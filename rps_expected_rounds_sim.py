@@ -15,7 +15,7 @@ def play_game(total_rounds):
     p1_wins = 0
     p2_wins = 0
     rounds = 0
-    while p1_wins <= (total_rounds//2)+1 and p2_wins <= (total_rounds//2)+1:
+    while p1_wins < (total_rounds//2)+1 and p2_wins < (total_rounds//2)+1:
         vict = rand.randint(1, 3)
         if vict == 1:
             p1_wins += 1
